@@ -1,0 +1,97 @@
+.product_photo{
+    margin-top: 100px;
+}
+
+.photo_img{
+    display: flex;
+    justify-content: center;
+    margin: 0 0 70px 0;
+}
+
+/* review */
+
+.review_box{
+    margin-bottom: 200px
+}
+.rv_intro_d{
+    display: flex;
+    justify-content: center;
+}
+
+.rv_intro{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 5px;
+}
+
+#rv_name{
+    margin-right: 955px;
+    padding-top: 20px;
+}
+
+#rv_write{
+    border: 1px solid darkgray;
+    padding: 5px 20px;
+}
+
+.rv_box{
+    display: flex;
+    justify-content: center;
+}
+
+.rv_no{
+    padding: 10px 15px 10px 15px !important;
+}
+
+.rv_title{
+    padding: 10px 400px 10px 400px !important;
+
+}
+
+.rv_poster{
+    padding: 10px 30px 10px 30px !important;
+
+}
+
+.rv_date{
+    padding: 10px 30px 10px 30px !important;
+
+}
+
+.rv_table{
+    border: 1px solid darkgray;
+    border-collapse: collapse;
+    
+}
+
+.rv_table th{
+    padding: 10px;
+}
+
+.rv_table td{
+    padding: 10px;
+}
+
+/* qna */
+
+
+.qna_intro_d{
+    display: flex;
+    justify-content: center;
+}
+
+.qna_intro{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 5px;
+}
+
+#qna_name{
+    margin-right: 980px;
+    padding-top: 20px;
+}
+
+#qna_write{
+    border: 1px solid darkgray;
+    padding: 5px 20px;
+}

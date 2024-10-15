@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans", sans-serif;
+}
+
+main {
+  /* margin-top: 180px; */
+  padding: 20px;
+}
+
+.del_info fieldset {
+  width: 60%;
+  height: auto;
+  margin: 0 auto;
+  margin-bottom: 4;
+  padding: 20px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(212, 206, 206, 0.7);
+  /* text-align: center; */
+}
+
+.info {
+  list-style: none;
+}
+.info_top {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.info li {
+  margin-bottom: 10px;
+}
+
+.discount p {
+  margin-top: 50px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.discount fieldset {
+  width: 60%;
+  height: 10%;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: rgb(212, 206, 206, 0.7);
+}
+
+select {
+  margin-left: 10px;
+}
+
+.point li input {
+  margin-left: 27px;
+}
+
+.payment_price p {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+
+.payment_price table {
+  border-top: 1px solid black;
+  margin: 0 auto;
+}
+
+.payment_price table tr td {
+  padding-bottom: 20px;
+}
+
+.line {
+  border: none;
+  border-top: 1px solid #000;
+  margin: 2px 0;
+}
+
+.cancel {
+  margin: 0 auto;
+}
+
+.pay {
+  text-align: center;
+}
+
+.cancel {
+  margin-right: 6%;
+  margin-top: 20px;
+  height: 30px;
+  width: 60px;
+}
+
+.agree {
+  margin-top: 20px;
+  height: 30px;
+  width: 60px;
+}
+
+.total_price {
+  display: flex;
+  justify-content: flex-end;
+}

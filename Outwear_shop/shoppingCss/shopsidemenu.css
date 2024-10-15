@@ -1,0 +1,29 @@
+.sideSelectMenu {
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    padding: 0 0 0 10px;
+    border-left: 2px solid #000000;
+    margin-top: 160px;
+    margin-left: 74px;
+    transition: all 0.5s ease-in-out;
+    z-index: 2;
+}
+  
+.sideSelectMenu li {
+    font-size: 20px;
+    font-weight: 350;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    color: #575c60;
+    padding: 0 0 0 16px;
+    line-height: 1.5;
+}
+
+.sideSelectMenu li a {
+    transition: all 0.5s;
+    transition-timing-function: ease-in-out;
+}
+.sideSelectMenu li a:hover {
+      font-size: 23px;
+}

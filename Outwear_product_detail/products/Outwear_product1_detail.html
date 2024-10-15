@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OutWear</title>
+    <style>
+      * {
+        list-style: none;
+        text-decoration: none;
+        border-collapse: none;
+        color: #000;
+      }
+    </style>
+    <!-- 폰트 설정 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- css적용 -->
+    <link rel="stylesheet" href="/Outwear_product_detail/productDetailCss/footerstyle.css" />
+    <link rel="stylesheet" href="/Outwear_product_detail/productDetailCss/productDetailHeaderStyle.css" />
+    <link rel="stylesheet" href="/Outwear_product_detail/productDetailCss/productDetailInfoStyle.css">
+    <link rel="stylesheet" href="/Outwear_product_detail/productDetailCss/productDetailStyle.css">
+
+  </head>
+  <body>
+    <!-- 헤더 부분 -->
+    <header>
+      <nav class="navbar" onmouseover="mouse_over()" onmouseout="mouse_out()">
+        <p class="logo"><a href="/Outwear_Main/Outwear_main.html">Outwear</a></p>
+        <ul class="rightitem">
+          <li><a href="/Outwear_login/login.html">log-in</a></li>
+          <li>&nbsp&nbsp/&nbsp&nbsp</li>
+          <li><a href="/Outwear_shopping_cart/shopping_cart.html"> cart</a></li>
+        </ul>
+        <div class="linebox">
+          <hr class="line" />
+        </div>
+        <ul class="menubar" id="menubar">
+          <li><a href="/Outwear_shop/Outwear_shop.html">Shop</a></li>
+          <li><a href="/Outwear_Main/Outwear_main.html">Home</a></li>
+          <li><a href="#">Mypage</a></li>
+        </ul>
+      </nav>
+    </header>
+    <button onclick="backToTop()" id="btn-back-to-top">Top</button>
+
+    <!-- main -->
+    <main>
+      <!-- 가격, 재고 설정부분 -->
+      <span class="setting" id="cost">10000</span>
+      <span class="setting" id="stock">9</span>
+      <!-- 상품설명 -->
+      <div class="product_detail">
+        <div class="product_image_area">
+          <div class="thumbnail">
+            <img src="http://placehold.it/1250X1333" alt="">
+          </div>
+        </div>
+        <div class="product_description_area">
+          <div class="info_area">
+            <div>
+              <table border="0" summary="제품 이름, 가격, 설명, 가격 설정, 버튼들">
+                <tbody>
+                  <tr>
+                    <td class="product_name_area">
+                      <span class="product_name">Product1</span>
+                    </td>
+                  </tr>
+                  <tr class="product_price_area">
+                    <td class="product_price_area">
+                      <span class="product_price">₩ 10,000</span>
+                    </td>
+                  </tr>
+                  <tr class="product_des_area">
+                    <td>
+                      <pre><span class="product_description">와이드 핏 데님 트랙 팬츠
+사이드 라인 디테일
+무릎 턱 실루엣
+허리 밴딩 및 스트링
+밑단 스트링 및 스토퍼
+unisex 아이템
+
+color
+Brown
+Yellow
+
+size (cm)
+FREE : 허리 33-44,  밑위 28.5, 엉덩이 63, 허벅지 38, 밑단 30, 총장 106  
+
+model size (wearing size) 171cm/56kg (one size)
+
+fabric
+cotton
+
+비침X 안감X 신축성X 보통 두께감</span></pre>
+                    </td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <td class="quantity_area">
+                      <span id='result'>0</span>
+                      <input class="q_button q_p_btn" type='button' onclick='count("plus")' value='+' />
+                      <input class="q_button q_m_btn" type='button' onclick='count("minus")' value='-' />
+                      <span id='totalcost'>₩ 0</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <select name="color" class="color_selector">
+                        <option>color</option>
+                        <option disabled>-----------------------</option>
+                        <option value="brown">Brown</option>
+                        <option value="yellow">Yellow</option>
+                      </select>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="b_c_btn_area">
+                      <a href="/Outwear_payment_page/payment.html">
+                        <button class="buy_btn">BUY</button>
+                      </a>
+                      <a href="">
+                        <button class="cart_btn">ADD CART</button>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a href="">
+                        <button class="save_btn">SAVE</button>
+                      </a>
+                    </td>
+                  </tr>
+                </tfoot>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    <div class="line_div">
+      <hr class="div_line">
+    </div>
+    
+<!-- 상품 상세설명 -->
+     <div>
+      <div class="product_photo">
+        <div class="photo_img">
+          <img src="http://placehold.it/1179X682" alt="">
+        </div>
+        <div class="photo_img">
+          <img src="http://placehold.it/1179X682" alt="">
+        </div>
+        <div class="photo_img">
+          <img src="http://placehold.it/1179X682" alt="">
+        </div>
+      </div>
+     </div>
+   </main>
+   <article>
+<!--REVIEW  -->
+     <div>
+        <div class="review_box">
+          <div class="rv_intro_d">
+            <ul class="rv_intro">
+              <li id="rv_name">REVIEW</li>
+              <li id="rv_write">
+                <a href="" style="color: darkgray">후기작성</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <div class="rv_box">
+              <table border="1" summary="리뷰" class="rv_table">
+                <tbody>
+                  <tr>
+                    <td class="rv_no">
+                      <span>No</span>
+                    </td>
+                    <td class="rv_title">
+                      <span>TITLE</span>
+                    </td>
+                    <td class="rv_poster">
+                      <span>POSTER</span>
+                    </td>
+                    <td class="rv_date">
+                      <span>DATE</span>
+                    </td>
+                  </tr>
+
+
+                  <tr>
+                    <td>
+                      <span>1</span>
+                    </td>
+                    <td>
+                      <a href=""><span>예뻐요</span></a>
+
+                    </td>
+                    <td>
+                      <span>user1</span>
+                    </td>
+                    <td>
+                      <span>2024-10-02</span>
+                    </td>
+                  </tr>
+
+
+                </tbody>
+              </table>
+            </div>
+        </div>
+      </div>
+
+<!--QNA  -->
+     <div>
+      <div class="QNA_box">
+        <div class="qna_intro_d">
+          <ul class="qna_intro">
+            <li id="qna_name">Q&A</li>
+            <li id="qna_write">
+              <a href="" style="color: darkgray">문의작성</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <div class="rv_box">
+            <table border="1" summary="리뷰" class="rv_table">
+              <tbody>
+                <tr>
+                  <td class="rv_no">
+                    <span>No</span>
+                  </td>
+                  <td class="rv_title">
+                    <span>TITLE</span>
+                  </td>
+                  <td class="rv_poster">
+                    <span>POSTER</span>
+                  </td>
+                  <td class="rv_date">
+                    <span>DATE</span>
+                  </td>
+                </tr>
+
+
+                <tr>
+                  <td>
+                    <span>1</span>
+                  </td>
+                  <td>
+                    <a href=""><span>세탁은 어떻게 하죠?</span></a>
+                  </td>
+                  <td>
+                    <span>user1</span>
+                  </td>
+                  <td>
+                    <span>2024-10-02</span>
+                  </td>
+                </tr>
+
+                
+              </tbody>
+            </table>
+          </div>
+      </div>
+    </div>
+    </article>
+
+      <!-- FOOTER -->
+    <footer>
+      <div class="footer_top footer">
+          <div class="footer_top_inner">
+              <ul class="footer_top_item">
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">FAQ</a></li>
+                  <li><a href="#">Contact Us</a></li>
+              </ul>
+          </div>
+      </div>
+      <div class="footer_social footer">
+          <ul>
+              <li><a href="#">Instagram</a></li>
+          </ul>
+      </div>
+      <div class="footer_bottom footer">
+          <div class="footer_bottom_inner">
+              <p>© 2024 Outwear. All rights reserved.</p>
+          </div>
+      </div>
+    </footer>
+</body>
+<script src="/Outwear_product_detail/quentity_script.js"></script>
+</html>

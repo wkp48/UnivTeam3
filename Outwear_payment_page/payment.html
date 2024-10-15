@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OutWear</title>
+    <style>
+      * {
+        list-style: none;
+        text-decoration: none;
+        border-collapse: none;
+        color: #000;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+    </style>
+    <!-- 폰트 설정 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- css적용 -->
+    <link rel="stylesheet" href="/Outwear_payment_page/paymentCss/payment_style.css" />
+    <link rel="stylesheet" href="/Outwear_payment_page/paymentCss/headerstyle.css" />
+    <link rel="stylesheet" href="/Outwear_payment_page/paymentCss/footer.css" />
+  </head>
+  <body>
+    <!-- 헤더 부분 -->
+    <header>
+      <nav class="navbar" onmouseover="mouse_over()" onmouseout="mouse_out()">
+        <p class="logo"><a href="/Outwear_Main/Outwear_main.html">Outwear</a></p>
+        <ul class="rightitem">
+          <li><a href="/Outwear_login/login.html">log-in</a></li>
+          <li>&nbsp&nbsp/&nbsp&nbsp</li>
+          <li><a href="/Outwear_shopping_cart/shopping_cart.html"> cart</a></li>
+        </ul>
+        <div class="linebox">
+          <hr class="line" />
+        </div>
+        <ul class="menubar" id="menubar">
+          <li><a href="/Outwear_shop/Outwear_shop.html">Shop</a></li>
+          <li><a href="/Outwear_Main/Outwear_main.html">Home</a></li>
+          <li><a href="#">Mypage</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="del_info">
+        <p class="info_top">배송 정보</p>
+        <fieldset>
+          <ul class="info">
+            <li>
+              <label for="user_name">배송자 명</label>
+              <input type="text" id="user_name" autofocus required />
+            </li>
+            <li>
+              <label for="address">배송지</label>
+              <input type="text" id="addr" required />
+            </li>
+            <li>
+              <label for="phone">연락처</label>
+              <input
+                type="tel"
+                id="phone"
+                placeholder="010-0000-0000"
+                required
+              />
+            </li>
+            <li>
+              <label for="email">이메일</label>
+              <input type="email" id="mail" placeholder="ex) 0000@gmail.com" />
+            </li>
+            <li>
+              <label for="memo">배송메모</label>
+              <input type="text" id="memo" />
+            </li>
+          </ul>
+        </fieldset>
+      </div>
+
+      <div class="discount">
+        <p>할인 혜택</p>
+        <fieldset>
+          <ul class="coupon">
+            <li>
+              <label for="coupon">쿠폰</label>
+              <select name="coupon" id="coupon">
+                <option value="first">첫구매 감사 할인쿠폰 20%</option>
+                <option value="fall">가을 맞이 할인쿠폰 20%</option>
+                <option value="new">신상품 할인쿠폰 20%</option>
+              </select>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <ul class="point">
+            <li>
+              <label for="point">포인트</label>
+              <input type="text" value="1000p" readonly />
+              <input type="number" />
+              <button class="use">사용</button>
+              <button class="all_use">모두 사용</button>
+            </li>
+          </ul>
+        </fieldset>
+      </div>
+      <div class="payment_price">
+        <p>결제 금액</p>
+        <table>
+          <tr>
+            <td>총 상품금액</td>
+            <td class="total_price">46800원</td>
+          </tr>
+          <tr>
+            <td>쿠폰/포인트 할인</td>
+            <td class="total_price" style="color: red">-0원</td>
+          </tr>
+          <tr>
+            <td>배송비</td>
+            <td class="total_price">3000원</td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <hr class="line" />
+            </td>
+          </tr>
+          <tr>
+            <td>총 결제금액</td>
+            <td class="total_price">49800원</td>
+          </tr>
+        </table>
+        <div class="pay">
+          <button class="cancel">결제 취소</button>
+          <button class="agree">결제</button>
+        </div>
+      </div>
+    </main>
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer_top footer">
+        <div class="footer_top_inner">
+          <ul class="footer_top_item">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer_social footer">
+        <ul>
+          <li><a href="#">Instagram</a></li>
+        </ul>
+      </div>
+      <div class="footer_bottom footer">
+        <div class="footer_bottom_inner">
+          <p>© 2024 Outwear. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Noto Sans", sans-serif;
+}
+
+body {
+    justify-content: center;
+    background-color:white;
+}
+
+
+.navbar {
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    top: 0px;
+    z-index: 3;
+    width: 100%;
+    height: 160px;
+    transition: all 0.5s ease-in-out;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    align-items: center;
+}
+.navbar:hover{
+    background-color: rgb(255, 255, 255, 0.7);
+}
+
+.logo {
+    font-size: 32px;
+    align-items: start;
+    display: flex;
+    justify-content: center;
+    margin-top: 23px;
+}
+.rightitem{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 70px;
+    font-size: 15px;
+    font-weight:200;
+}
+.rightitem li a {
+    color: rgb(107, 105, 105);
+    transition: all 0.5s;
+    transition-timing-function: ease-in-out;
+
+}
+
+.rightitem li a:hover {
+    color: black;
+}
+
+.linebox {
+    display: flex;
+    justify-content: center;
+}
+
+.line {
+    margin-top: 11px;
+    width: 630px;
+    height: 1.5px;
+    background-color: black;
+    border: 0;
+}
+
+.menubar {
+    font-size: 20px;
+    font-optical-sizing: 10px;
+    font-weight:200;
+    display: flex;
+    justify-content:center;
+    margin-top: 19px;
+    opacity: 1;
+    transition-property: opacity, margin-top;
+    transition-duration: 0.2s, 0.5s;
+}
+
+.menubar li{
+    margin-left: 69px;
+    margin-right: 69px;
+}
+.menubar li a {
+    color: rgb(107, 105, 105);
+    transition: all 0.5s;
+    transition-timing-function: ease-in-out;
+}
+
+.menubar li a:hover {
+    color: black;
+}
+
+main{
+    justify-content: center;
+    margin-top: 150px;
+    padding-top: 100px;
+    padding-left: 300px;
+    padding-right: 300px;
+    height: 500px;
+}
+
+
+.login-container {
+    align-items: center;
+    background-color:white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.label {
+    margin-bottom: 5px;
+    display: block;
+}
+
+
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: gray;
+}
+
+.under-group {
+    align-items: center;  
+    margin-top: 15px;
+}
+
+#res {
+    font-size: 12px;
+}
+
+#forgot {
+    font-size: 12px;
+}
+
+.under-group:hover {
+    color: gray;
+}
+
+/*---회원가입---*/
+.underline {
+    display: flex;
+    justify-content: center;
+}
+
+.underline {
+    font-weight: 100;
+    margin-top: 5px;
+}
+
+.send_email label {
+    display: inline-flex;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.member_id, .member_pw, .member_pw_check, 
+.member_name, .member_email, .send_email, 
+.btn, .info, #btn {
+    width:50%;
+    text-align: left;
+    margin: 10px auto;
+    display: grid;  
+}
+
+.cbx {
+    width: 20px;
+}
+
+.btn, #btn {
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: row; 
+        height: auto; 
+    }
+    .rightitem {
+        margin-right: 0; 
+        justify-content: center;
+    }
+    .menubar {
+        display: flex;
+        justify-content: center; 
+        margin-top: 10px; 
+    }
+    .menubar li {
+        margin: 0 10px; 
+    }
+    main {
+        padding: 100px;
+        margin-top: 100px; 
+    }
+    .기본 정보 {
+        text-align: center; 
+    }
+}

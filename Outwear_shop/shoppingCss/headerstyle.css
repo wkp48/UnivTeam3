@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Noto Sans", sans-serif;
+}
+
+/* body {
+    background-color: pink;
+} */
+
+
+.navbar {
+    background-color: rgb(255, 255, 255, 0);
+    position: fixed;
+    top: 0px;
+    z-index: 3;
+    width: 100%;
+    height: 160px;
+    transition: all 0.5s ease-in-out;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    align-items: center;
+}
+.navbar:hover{
+    background-color: rgb(255, 255, 255, 0.7);
+}
+
+.logo {
+    font-size: 32px;
+    align-items: start;
+    display: flex;
+    justify-content: center;
+    margin-top: 23px;
+}
+.rightitem{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 70px;
+    font-size: 15px;
+    font-weight:200;
+}
+.rightitem li a {
+    color: rgb(107, 105, 105);
+    transition: all 0.3s;
+    transition-timing-function: ease-in-out;
+
+}
+
+.rightitem li a:hover {
+    color: black;
+}
+
+.linebox {
+    display: flex;
+    justify-content: center;
+}
+
+.line {
+    margin-top: 11px;
+    width: 630px;
+    height: 1.5px;
+    background-color: black;
+    border: 0;
+}
+
+.menubar {
+    font-size: 20px;
+    font-optical-sizing: 10px;
+    font-weight:200;
+    display: flex;
+    justify-content:center;
+    margin-top: 19px;
+    opacity: 1;
+    transition-property: opacity, margin-top;
+    transition-duration: 0.2s, 0.5s;
+}
+
+.menubar li{
+    margin-left: 69px;
+    margin-right: 69px;
+}
+.menubar li a {
+    color: rgb(107, 105, 105);
+    transition: all 0.3s;
+    transition-timing-function: ease-in-out;
+}
+
+.menubar li a:hover {
+    color: black;
+}

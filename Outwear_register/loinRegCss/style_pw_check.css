@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #333;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+input[type="text"],
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.row .input-group {
+    flex: 1 1 0;
+    min-width: 15px;
+}
+
+.nationality {
+    width: 130px;
+}
+
+.gender-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.birth-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.birth-group input[type="text"],
+.birth-group select {
+    width: calc(50% - 10px); 
+}
+
+.input-group input[type="text"],
+.input-group select {
+    width: calc(50% - 10px); 
+}
+
+.input-group2 {
+    display: flex;
+}
+
+.code {
+    margin-right: 40px;
+    height: 36.5px;
+}
+
+button {
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: grey;
+}
+
+.submit-btn {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: grey;
+}
+
+.check_btn {
+    width: 123px;
+    font-size: 13px;
+}
+
+.gender-group {
+    display: flex;
+    justify-content: flex-start; 
+    margin-bottom: 15px;
+    gap: 20px; 
+}
+
+.gender-group label {
+    display: flex; 
+    align-items: center; 
+}
+
+.id {
+    margin: auto;
+}
+
+.nationality {
+    margin: auto;
+}

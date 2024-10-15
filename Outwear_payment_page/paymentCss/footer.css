@@ -1,0 +1,25 @@
+.footer {
+  display: flex;
+  justify-content: center;
+}
+
+.footer_top {
+  margin-top: 100px;
+  margin-bottom: 25px;
+}
+
+.footer_bottom {
+  margin-bottom: 50px;
+}
+.footer_social {
+  margin-bottom: 25px;
+}
+.footer_top_item {
+  font-size: 15px;
+  font-weight: 300;
+  display: flex;
+}
+
+.footer_top_item li {
+  margin: 0 10px 0 10px;
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OutWear</title>
+    <style>
+        *{
+            list-style: none;
+            text-decoration: none;
+            border-collapse: none;
+            color: #000;
+        }
+    </style>
+    <!-- 폰트 설정 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- css적용 -->
+    <link rel="stylesheet" href="loginCss/loginstyle.css">
+</head>
+<body>
+    <!-- 헤더 부분 -->
+    <header>
+        <nav class="navbar" onmouseover="mouse_over()" onmouseout="mouse_out()">
+            <p class="logo"><a href="/Outwear_main/Outwear_main.html">Outwear</a></p>
+            <ul class="rightitem">
+                <li><a href="/Outwear_login/login.html">log-in</a></li>
+                <li> &nbsp&nbsp/&nbsp&nbsp </li>
+                <li><a href="/Outwear_shopping_cart/shopping_cart.html"> cart</a> </li>
+            </ul>
+            <div class="linebox" >
+                <hr  class="line"> 
+            </div>
+            <ul class="menubar" id="menubar">
+                <li><a href="/Outwear_shop/Outwear_shop.html">Shop</a></li>
+                <li><a href="/Outwear_main/Outwear_main.html">Home</a></li>
+                <li><a href="#">Mypage</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- login -->
+    <main>
+        <div class="login-container">
+            <h2>로그인</h2>
+            <form>
+                <div class="input-group">
+                    <!-- <label for="username">아이디</label> -->
+                    <input type="text" id="username" name="username" required placeholder="MEMBER ID" style="font-size: 12px;">
+                </div>
+
+                <div class="input-group">
+                    <!-- <label for="password">비밀번호</label> -->
+                    <input type="password" id="password" name="password" required placeholder="PASSWORD" style="font-size: 12px;">
+                </div>
+
+                <button type="submit">로그인</button> 
+
+                <div class="under-group">
+                    <a href='/Outwear_register/sign up.html' id="res">REGISTER</a>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp
+                    <a href='/Outwear_register/forgot id,pw.html' id="forgot">FORGOT ID / PW</a>
+                </div>
+            </form>
+        </div>
+    </main>
+    <script src="script.js"></script>
+    <footer>
+        <div class="footer_top footer">
+            <div class="footer_top_inner">
+                <ul class="footer_top_item">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer_social footer">
+            <ul>
+                <li><a href="#">Instagram</a></li>
+            </ul>
+        </div>
+        <div class="footer_bottom footer">
+            <div class="footer_bottom_inner">
+                <p>© 2024 Outwear. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

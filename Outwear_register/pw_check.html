@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>휴대전화 인증</title>
+    <link rel="stylesheet" href="/Outwear_register/loinRegCss/style_pw_check.css">
+</head>
+<body>
+    <header>
+    </header>
+
+    <div class="container">
+        <h2>휴대전화 인증</h2>
+        <form>
+            <div class="row">
+            <div class="">
+                <input type="text" class="name" size="13" placeholder="이름">
+            </div>
+
+            <div class="input-group1">
+                <select class="nationality">
+                    <option value="내국인"  >내국인</option>
+                    <option value="외국인">외국인</option>
+                </select>
+            </div>
+        </div>
+
+            <div class="gender-group">
+                <label>
+                    <input type="radio" name="gender" value="남자" checked> 남자
+                </label>
+                <label>
+                    <input type="radio" name="gender" value="여자"> 여자
+                </label>
+            </div>
+            
+            <div class="birth-group">   
+                <input type="text" id="birth-year" placeholder="년(4자)">
+                <select id="birth-month">
+                    <option value="1">1월</option>
+                    <option value="2">2월</option>
+                    <option value="3">3월</option>
+                    <option value="4">4월</option>
+                    <option value="5">5월</option>
+                    <option value="6">6월</option>
+                    <option value="7">7월</option>
+                    <option value="8">8월</option>
+                    <option value="9">9월</option>
+                    <option value="10">10월</option>
+                    <option value="11">11월</option>
+                    <option value="12">12월</option>
+                </select>
+                <input type="text" id="birth-day" placeholder="일">
+            </div>
+
+            <div class="input-group">
+                <select class="carrier">
+                    <option value="SKT">SKT</option>
+                    <option value="KT">KT</option>
+                    <option value="LGU+">LGU+</option>
+                    <option value="SKT">SKT알뜰폰</option>
+                    <option value="KT">KT알뜰폰</option>
+                    <option value="LGU+">LGU+알뜰폰</option>
+                </select>
+                <input type="text" id="phone-number" placeholder="휴대전화번호">
+                <button type="submit" class="submit-btn" id="btn">인증번호 발송</button>
+
+                <script> 
+                    document.getElementById("btn").addEventListener('click',hello);
+
+                    function hello() {
+                    alert("입력하신 휴대폰번호로 인증코드를 발송했습니다.");
+                    }
+                 </script>
+            </div>
+
+            <div class="input-group">
+                <div class="input-group2">
+                <input type="text" class="code" placeholder="인증번호">
+                <label>
+                    <button type="submit" class="check_btn" id="btn">인증번호 확인</button>
+                </label>
+
+            </div>
+            </div>
+            <button type="submit" class="submit-btn">확인</button>
+        </form>
+    </div>
+</body>
+</html>

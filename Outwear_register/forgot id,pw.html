@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OutWear</title>
+    <style>
+        *{
+            list-style: none;
+            text-decoration: none;
+            border-collapse: none;
+            color: #000;
+        }
+    </style>
+    <!-- 폰트 설정 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- css적용 -->
+    <link rel="stylesheet" href="/Outwear_register/loinRegCss/style_forgot id,pw.css">
+</head>
+<body>
+    <!-- 헤더 부분 -->
+    <header>
+        <nav class="navbar" onmouseover="mouse_over()" onmouseout="mouse_out()">
+            <p class="logo"><a href="/Outwear_Main/Outwear_main.html">Outwear</a></p>
+            <ul class="rightitem">
+                <li><a href="/Outwear_login/login.html">log-in</a></li>
+                <li> &nbsp&nbsp/&nbsp&nbsp </li>
+                <li><a href="/Outwear_shopping_cart/shopping_cart.html"> cart</a> </li>
+            </ul>
+            <div class="linebox" >
+                <hr  class="line"> 
+            </div>
+            <ul class="menubar" id="menubar">
+                <li><a href="/Outwear_shop/Outwear_shop.html">Shop</a></li>
+                <li><a href="/Outwear_Main/Outwear_main.html">Home</a></li>
+                <li><a href="#">Mypage</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- login -->
+    <main>
+    <!-- 아이디 / 비밀번호 찾기-->
+     <div class="info">
+        <h>아이디 찾기</h>
+     </div>
+
+
+     <div class="member_id">
+        <input type="text" id="id" placeholder="이름">
+     </div>
+
+     <div class="member_id">
+        <input type="text" id="id" placeholder="이메일">
+     </div>
+
+     <button type="submit" id="btn" onclick="return validateForm()">확인</button>
+     <script> 
+        document.getElementById("btn").addEventListener('click',hello);
+
+        function hello() {
+        alert("인증코드를 발송했습니다. 이메일을 확인해 주세요");
+        }
+     </script>
+     </br>
+
+     <div class="info">
+        <h>비밀번호 찾기</h>
+     </div>
+
+          <div class="member_id">
+        <input type="text" id="id" placeholder="아이디">
+     </div>
+
+     <div class="member_id">
+        <input type="text" id="id" placeholder="휴대폰번호">
+     </div>
+     <button onclick="openPwCheck()" class="btn">확인</button>
+     <script> 
+     function openPwCheck() {
+        window.open("pw_check.html", "PwCheckWindow", "width=500,height=600");
+    }
+    </script>     
+</body>
+</html>
+
