@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OutWear</title>
+    <style>
+      * {
+        list-style: none;
+        text-decoration: none;
+        border-collapse: none;
+        color: #000;
+      }
+    </style>
+    <!-- 폰트 설정 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- css적용 -->
+    <link rel="stylesheet" href="mainCss/mainstyle.css" />
+  </head>
+  <body>
+    <!-- 헤더 부분 -->
+    <header>
+      <nav class="navbar" onmouseover="mouse_over()" onmouseout="mouse_out()">
+        <p class="logo"><a href="/Outwear_Main/Outwear_main.html">Outwear</a></p>
+        <ul class="rightitem">
+          <li><a href="/Outwear_login/login.html">log-in</a></li>
+          <li>&nbsp&nbsp/&nbsp&nbsp</li>
+          <li><a href="/Outwear_shopping_cart/shopping_cart.html"> cart</a></li>
+        </ul>
+        <div class="linebox">
+          <hr class="line" />
+        </div>
+        <ul class="menubar" id="menubar">
+          <li><a href="/Outwear_shop/Outwear_shop.html">Shop</a></li>
+          <li><a href="/Outwear_Main/Outwear_main.html">Home</a></li>
+          <li><a href="#">Mypage</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- 메인 부분 -->
+    <main>
+      <div class="banner">
+        <div class="banner_contents">
+          <a href="/Outwear_shop/shoppingtap/event.html">
+            <img src="image/765e9c9ecd1f92ea266c093f05e06a5a.jpg" alt="" id="banner_img">
+          </a>
+          <div class="banner_btn_box">
+            <h1 class="banner_title">신상 파격 할인</h1>
+            <div class="banner_btn">
+              <a href="/Outwear_shop/shoppingtap/event.html" >
+                <button class="event_btn" >할인 제품 구매하기</button>
+              </a>
+            </div>
+          </div> 
+
+        </div>
+      </div>
+
+      <div class="preview">
+        <h2 class="preview_h2" style="font-weight: 300;">신상 모아보기</h2>
+        <div class="linebox2">
+          <hr class="line2" />
+        </div>
+        <div class="new_cloth">
+          <a href="#" target="_self">
+            <img src="image/1 cloth.webp" alt="신상1" />
+          </a>
+          <a href="#" target="_self">
+            <img src="image/2 image.webp" alt="" />
+          </a>
+          <a href="#" target="_self">
+            <img src="image/3 image.webp" alt="" />
+          </a>
+          <a href="#" target="_self">
+            <img src="image/4 image.webp" alt="" />
+          </a>
+          <a href="#" target="_self">
+            <img src="image/5 image.webp" alt="" />
+          </a>
+          <a href="#" target="_self">
+            <img src="image/6 image.webp" alt="" />
+          </a>
+        </div>
+
+        <h2 class="popular_h2" style="font-weight: 300;">인기 제품 모아보기</h2>
+        <div class="linebox3">
+          <hr class="line3" />
+        </div>
+        <div class="new_cloth">
+          <img src="image/7 image.webp" alt="" />
+          <img src="image/8 image.webp" alt="" />
+          <img src="image/9 image.webp" alt="" />
+          <img src="image/10 image.webp" alt="" />
+          <img src="image/11 image.webp" alt="" />
+          <img src="image/12 image.webp" alt="" />
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+    <!-- Footer -->
+    <footer>
+      <div class="footer_top footer">
+          <div class="footer_top_inner">
+              <ul class="footer_top_item">
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">FAQ</a></li>
+                  <li><a href="#">Contact Us</a></li>
+              </ul>
+          </div>
+      </div>
+      <div class="footer_social footer">
+          <ul>
+              <li><a href="#">Instagram</a></li>
+          </ul>
+      </div>
+      <div class="footer_bottom footer">
+          <div class="footer_bottom_inner">
+              <p>© 2024 Outwear. All rights reserved.</p>
+          </div>
+      </div>
+  </footer>
+</html>
